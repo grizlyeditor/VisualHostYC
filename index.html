@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visual Hosting</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 px-4 py-3 flex justify-between items-center shadow-lg">
+    <h1 class="text-xl font-bold text-blue-400">Visual Hosting</h1>
+    <div class="space-x-2">
+      <button class="btn">Add Repository</button>
+      <button class="btn-green">Run App</button>
+    </div>
+  </nav>  <!-- Main Content -->  <div class="p-4 grid grid-cols-1 md:grid-cols-4 gap-4">
+    <!-- Sidebar -->
+    <aside class="col-span-1 bg-gray-800 p-4 rounded-lg space-y-2">
+      <h2 class="text-lg font-semibold mb-3">Templates</h2>
+      <div class="template-btns">
+        <button class="template">Python</button>
+        <button class="template">Java</button>
+        <button class="template">NodeJS</button>
+        <button class="template">HTML/CSS</button>
+      </div>
+    </aside><!-- Editor & Console -->
+<main class="col-span-3 space-y-4">
+  <!-- File Explorer -->
+  <section class="bg-gray-800 p-4 rounded-lg">
+    <h2 class="font-semibold mb-2">File Explorer</h2>
+    <div class="file-tree bg-gray-900 p-3 rounded">
+      <ul>
+        <li><img src="assets/icons/folder.svg" class="icon"> src/
+          <ul>
+            <li><img src="assets/icons/code.svg" class="icon"> main.py</li>
+          </ul>
+        </li>
+        <li><img src="assets/icons/code.svg" class="icon"> requirements.txt</li>
+        <li><img src="assets/icons/code.svg" class="icon"> README.md</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Code Editor -->
+  <section class="bg-gray-800 p-4 rounded-lg">
+    <h2 class="font-semibold mb-2">Editor</h2>
+    <textarea class="editor"># Write your code here...
+
+print("Welcome to Visual Hosting!")</textarea> </section>
+
+<!-- Console Output -->
+  <section class="bg-gray-800 p-4 rounded-lg">
+    <h2 class="font-semibold mb-2">Console</h2>
+    <div id="console" class="console">
+      > Initializing build system...
+      <br>> Build successful ✅
+      <br>> Running app on https://yourapp.visualhosting.app
+    </div>
+  </section>
+</main>
+
+  </div>  <footer class="text-center text-gray-500 py-4 border-t border-gray-700 mt-10">
+    Visual Hosting &copy; 2025. All rights visually faked 😎
+  </footer>  <script src="app.js"></script></body>
+</html>
